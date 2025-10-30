@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #FFCC00;
+        }
+        p#t1{
+            text-align: center;
+            font-size: 30px;
+        }
+        div{
+            display: none;
+            width: 40%;
+            border: solid #0a940a;
+            margin: auto;
+        }
+        #ini, #depo {
+            border: solid;
+            border-color:cadetblue;
+            border-radius: 0.5em;
+            width:150px;
+            height: 60px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #ini:hover{
+            background-color:tomato;
+            color: white;
+            cursor: pointer;
+        }
+        #valor{
+            border-radius: 0.5em;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        function llamada(){
+            document.getElementById('suma').style.display="block";
+            document.getElementById('ini').style.display="none";
+        }
+        function fin(){
+            document.getElementById('suma').style.display="none";
+            document.getElementById('ini').style.display="block";
+            document.getElementById('ini').style.display="flex";
+            document.getElementById('ini').style.alignItems="center";
+            document.getElementById('ini').style.justifyContent="center";
+        }
+        function depo(){
+            let d1=parseInt(document.getElementById('valor').value);
+            let moneda=0;
+            if (moneda==0){
+                
+            }
+            let acumu
+
+
+        }
+    </script>
+  
+</head>
+<body>
+    <p id="t1">MI ALCANCIA PERSONAL..</p>
+    <p id="ini" onclick="llamada();">INICIAR</p>
+    <div id="suma">
+        <input type="text" name="" id="valor" placeholder="$ $ $ $ $ $"><br><br>
+        <label id="depo">Depositar..</label><br>
+        <label id="">Total Acumulado: $$$</label>
+        <p id="ini" onclick="fin();">TERMINAR</p>
+
+    </div>
+</body>
+</html>
